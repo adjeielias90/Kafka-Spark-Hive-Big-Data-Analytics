@@ -289,7 +289,7 @@ By setting the PYSPARK_PYTHON variable, we can use PySpark with Python3, the ver
 ~$ cd kafka
 ```
 
-### Zookeeper
+### 1 Zookeeper
 
 1. start zookeeper
 ```
@@ -298,7 +298,7 @@ By setting the PYSPARK_PYTHON variable, we can use PySpark with Python3, the ver
 ./bin/zookeeper-server-start.sh ./config/zookeeper.properties
 ```
 
-### Kafka Broker
+### 2 Kafka Broker
 
 2. start kafka broker
 ```
@@ -306,7 +306,7 @@ By setting the PYSPARK_PYTHON variable, we can use PySpark with Python3, the ver
 ```
 
 
-### Kafka Configuration
+### 3 Kafka Configuration
 
 3. some kafka configuration
 Check for existing topics
@@ -344,7 +344,7 @@ hive> select count(*) from tweets;
 ~$ python3 tweet_stream.py
 ```
 
-# Spark Consumer
+### Spark Consumer
 7. start the spark consumer
 ```
 ~$ spark-submit --jars spark-streaming-kafka.jar files/transformer.py
